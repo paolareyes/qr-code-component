@@ -1,0 +1,130 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+  --clr-white: 0, 0%, 100%;
+  --clr-lightgray: 212, 45%, 89%;
+  --clr-grayishblue: 220, 15%, 55%;
+  --clr-darkblue: 218, 44%, 22%;
+
+  /* font-sizes */
+  --fs-200: 1.5rem;
+  --fs-100: 1.1rem;
+
+  /* font-families */
+  --ff-serif: 'Outfit', sans-serif;
+}
+
+/* ------------------------ */
+/* Reset                    */
+/* ------------------------ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body{
+  font-family: var(--ff-serif);
+  font-size: 15px;
+  background-color: hsl( var(--clr-lightgray) );
+  color: hsl( var(--clr-darkblue) );
+  min-height: 100vh;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* makes images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* makes form elements easier to work with */
+input,
+button,
+textarea,
+select{
+  font: inherit;
+}
+
+/* ------------------------ */
+/* Utility classes          */
+/* ------------------------ */
+
+.bg-white {
+  background-color: hsl( var(--clr-white) );
+}
+
+.clr-light {
+  color: hsl( var(--clr-grayishblue) );
+}
+
+.clr-dark {
+    color: hsl( var(--clr-darkblue) );
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/* ------------------ */
+/* Components         */
+/* ------------------ */
+
+.card {
+  width: 23rem;
+  height: 35rem;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card h1, h2 {
+  margin: 20px 15px;
+}
