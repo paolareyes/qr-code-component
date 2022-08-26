@@ -115,9 +115,8 @@ select{
 /* ------------------ */
 
 .card {
-  width: 23rem;
-  height: 35rem;
-  padding: 15px;
+  max-width: 23rem;
+  padding: 1rem;
   border-radius: 15px;
 }
 
@@ -125,6 +124,6 @@ select{
   border-radius: 10px;
 }
 
-.card h1, h2 {
+.card h1, p {
   margin: 20px 15px;
 }
